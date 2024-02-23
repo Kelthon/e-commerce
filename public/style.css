@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+nav.navbar > aside > section {
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+  padding-block: 1em;
+  color: white;
+}
+
+nav.navbar > aside > section > h2 {
+  font-size: 1em;
+  order: 2;
+}
+
+nav.navbar > aside > section > p {
+  order: 3;
+  display: flex;
+  gap: 0.5em;
+}
+
+nav.navbar > aside > section > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+nav.navbar > aside > section > address {
+  display: flex;
+  gap: 1em;
+  order: 1;
+}
+
+nav.navbar > aside > section > address > p {
+  display: flex;
+  gap: 0.2em;
+}
