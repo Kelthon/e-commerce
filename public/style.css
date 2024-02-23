@@ -5,6 +5,21 @@
   font-family: "Montserrat", sans-serif;
 }
 
+:root {
+  --primary-color: #fff;
+  --primary-text-color: #fff;
+  --secondary-color: #fff;
+  --secondary-text-color: #fff;
+  --info-color: #fff;
+  --info-text-color: #fff;
+  --alert-color: #fff;
+  --alert-text-color: #fff;
+  --danger-color: #fff;
+  --danger-text-color: #fff;
+  --success-color: #fff;
+  --success-text-color: #fff;
+}
+
 :root,
 body {
   width: 100%;
@@ -31,8 +46,8 @@ nav.navbar > aside > section > p {
 }
 
 nav.navbar > aside > section > p > a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 nav.navbar > aside > section > address {
@@ -44,4 +59,24 @@ nav.navbar > aside > section > address {
 nav.navbar > aside > section > address > p {
   display: flex;
   gap: 0.2em;
+}
+
+nav.navbar > section {
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav.navbar > section > header {
+  align-items: center;
+  display: flex;
+}
+
+nav.navbar > section> header > ul,
+nav.navbar > section> footer > ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 1em;
 }
