@@ -83,7 +83,11 @@ nav.navbar > section > footer > ul {
 
 section.carrousel {
   position: relative;
-  
+  background: red;
+}
+
+section.carrousel > header#carrousel-items > p.carrousel-item {
+  display: flex;
 }
 
 section.carrousel > header#carrousel-items > p.carrousel-item > img {
