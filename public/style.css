@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  /* padding: 0; */
+  padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
@@ -73,10 +73,80 @@ nav.navbar > section > header {
   display: flex;
 }
 
-nav.navbar > section> header > ul,
-nav.navbar > section> footer > ul {
+nav.navbar > section > header > ul,
+nav.navbar > section > footer > ul {
   display: flex;
   list-style: none;
   flex-direction: row;
   gap: 1em;
+}
+
+section.carrousel {
+  position: relative;
+  
+}
+
+section.carrousel > header#carrousel-items > p.carrousel-item > img {
+  width: 100%;
+  opacity: 0.5;
+}
+
+section.carrousel > footer#carrousel-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+section.carrousel > footer#carrousel-controls > ol#carrousel-item-indicator {
+  display: flex;
+  list-style: none;
+  order: 3;
+  border-width: 0 0 1px 1px;
+  border-color: black;
+  border-style: solid;
+  flex: 0;
+}
+
+section.carrousel > footer#carrousel-controls > ol#carrousel-item-indicator > li.carrousel-indicator {
+  border-width: 1px 1px 0 0;
+  border-color: black;
+  border-style: solid;
+  padding: 0.25em 2em;
+}
+
+section.carrousel > footer#carrousel-controls > ol#carrousel-item-indicator > li.carrousel-indicator-active {
+  background-color: black;
+}
+
+section.carrousel > footer#carrousel-controls > ol#carrousel-item-indicator > li.carrousel-indicator:hover {
+  background-color: lightgray;
+}
+
+section.carrousel > footer#carrousel-controls > p {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  justify-content: space-between;
+}
+
+section.carrousel > footer#carrousel-controls > p > button[id^=carrousel-control] {
+  color: black;
+  border: none;
+  background-color: transparent;
+}
+
+section.carrousel > footer#carrousel-controls > p > button[id^=carrousel-control]:hover {
+  color: gray;
+  background-color: lightgray;
+}
+
+section.carrousel > article#carrousel-captions {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
