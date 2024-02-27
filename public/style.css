@@ -83,16 +83,15 @@ nav.navbar > section > footer > ul {
 
 div.carrousel {
   position: relative;
-  background: red;
 }
 
 div.carrousel > div#carrousel-items > div.carrousel-item > img {
   width: 100%;
   opacity: 0.5;
-  z-index: -1;
+  display: block;
 }
 
-div.carrousel > div#carrousel-control {
+div.carrousel > div#carrousel-items > div.carrousel-item > div.carrousel-caption, div.carrousel > div#carrousel-control {
   display: grid;
   grid-template-columns: 0.1fr 1fr 0.1fr;
   grid-template-rows: 1fr 0.1fr;
@@ -100,6 +99,36 @@ div.carrousel > div#carrousel-control {
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+div.carrousel > div#carrousel-items > div.carrousel-item > div.carrousel-caption > div.carrousel-container {
+  grid-column: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+div.carrousel > div#carrousel-items > div.carrousel-item > div.carrousel-caption > div.carrousel-container > section > p {
+  padding-block-end: 1em;
+  color: var(--success-color);
+}
+
+
+div.carrousel > div#carrousel-items > div.carrousel-item > div.carrousel-caption > div.carrousel-container > section > h2 {
+  font-size: 3em;
+  padding-block-end: 0.5em;
+  color: var(--success-color);
+}
+
+div.carrousel > div#carrousel-items > div.carrousel-item > div.carrousel-caption > div.carrousel-container > section > button {
+  padding: 1em 2em;
+  border: none;
+  background-color: var(--success-color);
+}
+
+div.carrousel > div#carrousel-items > div.carrousel-item > div.carrousel-caption > div.carrousel-container > section > button:hover {
+  opacity: 0.5;
 }
 
 div.carrousel > div#carrousel-control > button[id^=carrousel-control] {
@@ -128,7 +157,7 @@ div.carrousel > div#carrousel-control > ol#carrousel-item-indicator > li.carrous
   background-color: gray;
   padding-inline: 2em;
   opacity: 0.5;
-  margin-block-end: 3.5em;
+  margin-block-end: 3em;
 }
 
 div.carrousel > div#carrousel-control > ol#carrousel-item-indicator > li.carrousel-indicator-active {
