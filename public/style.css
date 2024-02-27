@@ -81,76 +81,61 @@ nav.navbar > section > footer > ul {
   gap: 1em;
 }
 
-section.carrousel {
+div.carrousel {
   position: relative;
   background: red;
 }
 
-section.carrousel > header#carrousel-items > p.carrousel-item {
-  display: flex;
-}
-
-section.carrousel > header#carrousel-items > p.carrousel-item > img {
+div.carrousel > div#carrousel-items > div.carrousel-item > img {
   width: 100%;
   opacity: 0.5;
+  z-index: -1;
 }
 
-section.carrousel > footer#carrousel-controls {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+div.carrousel > div#carrousel-control {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  grid-template-rows: 1fr 0.1fr;
+  position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  position: absolute;
 }
 
-section.carrousel > footer#carrousel-controls > ol#carrousel-item-indicator {
-  display: flex;
+div.carrousel > div#carrousel-control > button[id^=carrousel-control] {
+  grid-row: span 2;
+  background-color: transparent;
+  border: none;
+}
+
+div.carrousel > div#carrousel-control > button[id^=carrousel-control]:hover {
+  opacity: 0.8;
+}
+
+div.carrousel > div#carrousel-control > button#carrousel-control-next {
+  grid-column: 3;
+}
+
+div.carrousel > div#carrousel-control > ol#carrousel-item-indicator {
   list-style: none;
-  order: 3;
-  border-width: 0 0 1px 1px;
-  border-color: black;
-  border-style: solid;
-  flex: 0;
+  gap: 0.1em;
+  grid: 2 2;
+  display: flex;
+  justify-content: center;
 }
 
-section.carrousel > footer#carrousel-controls > ol#carrousel-item-indicator > li.carrousel-indicator {
-  border-width: 1px 1px 0 0;
-  border-color: black;
-  border-style: solid;
-  padding: 0.25em 2em;
+div.carrousel > div#carrousel-control > ol#carrousel-item-indicator > li.carrousel-indicator {
+  background-color: gray;
+  padding-inline: 2em;
+  opacity: 0.5;
+  margin-block-end: 3.5em;
 }
 
-section.carrousel > footer#carrousel-controls > ol#carrousel-item-indicator > li.carrousel-indicator-active {
+div.carrousel > div#carrousel-control > ol#carrousel-item-indicator > li.carrousel-indicator-active {
   background-color: black;
 }
 
-section.carrousel > footer#carrousel-controls > ol#carrousel-item-indicator > li.carrousel-indicator:hover {
-  background-color: lightgray;
+div.carrousel > div#carrousel-control > ol#carrousel-item-indicator > li.carrousel-indicator:hover {
+  opacity: 0.8;
 }
 
-section.carrousel > footer#carrousel-controls > p {
-  display: flex;
-  width: 100%;
-  flex: 1;
-  justify-content: space-between;
-}
-
-section.carrousel > footer#carrousel-controls > p > button[id^=carrousel-control] {
-  color: black;
-  border: none;
-  background-color: transparent;
-}
-
-section.carrousel > footer#carrousel-controls > p > button[id^=carrousel-control]:hover {
-  color: gray;
-  background-color: lightgray;
-}
-
-section.carrousel > article#carrousel-captions {
-  top: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}

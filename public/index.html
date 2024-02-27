@@ -45,7 +45,7 @@
             <h2>Bandage</h2>
             <ul>
               <li>Home</li>
-              <li><span>Shop</span><i class="ri-arrow-drop-down-line"></i></i></li>
+              <li><span>Shop</span><i class="ri-arrow-drop-down-line"></i></li>
               <li>About</li>
               <li>Blog</li>
               <li>Contact</li>
@@ -70,32 +70,36 @@
           </footer>
         </section>
       </nav>
-      <section class="carrousel">
-        <header id="carrousel-items">
-          <p class="carrousel-item"><img src="/public/static/pexels-craig-adderley-1563355.jpg"></p>
-          <!-- <p class="carrousel-item"><img src="/public/static/pexels-nextvoyage-490411.jpg"></p>
-          <p class="carrousel-item carrousel-item-default"><img src="/public/static/pexels-veeterzy-39811.jpg"></p> -->
-        </header>
 
-        <article id="carrousel-captions">
-          <small class="carrousel-subtitle">The best of 2023</small>
-          <h2 class="carrousel-title">Beautiful Roads</h2>
-          <p class="carrousel-description">A list of beautiful roads</p>
-          <button class="carrousel-button">see more</button>
-        </article>
-        
-        <footer id="carrousel-controls">
+      <div class="carrousel">
+        <div id="carrousel-items">
+          <div class="carrousel-item">
+            <img src="/public/static/pexels-craig-adderley-1563355.jpg" />
+            <section class="carrousel-caption">
+              <small class="carrousel-subtitle">The best of 2023</small>
+              <h2 class="carrousel-title">Beautiful Roads</h2>
+              <p class="carrousel-description">A list of beautiful roads</p>
+              <button class="carrousel-button">see more</button>
+              <!-- <p class="carrousel-item"><img src="/public/static/pexels-nextvoyage-490411.jpg"></p>
+              <p class="carrousel-item carrousel-item-default"><img src="/public/static/pexels-veeterzy-39811.jpg"></p> -->
+            </section>
+          </div>
+        </div>
+        <div id="carrousel-control">
+          <button id="carrousel-control-prev" type="button">
+            <i class="ri-arrow-left-wide-line ri-3x"></i>
+          </button>
+          <button id="carrousel-control-next" type="button">
+            <i class="ri-arrow-right-wide-line ri-3x"></i>
+          </button>
+
           <ol id="carrousel-item-indicator">
             <li class="carrousel-indicator carrousel-indicator-active"></li>
             <li class="carrousel-indicator"></li>
             <li class="carrousel-indicator"></li>
           </ol>
-          <p>
-            <button id="carrousel-control-prev" type="button"><i class="ri-arrow-left-wide-line ri-3x"></i></button>
-            <button id="carrousel-control-next" type="button"><i class="ri-arrow-right-wide-line ri-3x"></i></button>
-          </p>
-        </footer>
-      </section>
+        </div>
+      </div>
     </main>
   </body>
 </html>
