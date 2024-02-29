@@ -305,6 +305,8 @@ section#featured-products > div.container > div.product {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1 0 20%;
+  gap: 1em;
 }
 
 section#featured-products > div.container > div.product > div.price {
@@ -312,16 +314,30 @@ section#featured-products > div.container > div.product > div.price {
   gap: 10px
 }
 
+
 section#featured-products > div.container > div.product > div.available-colors {
   display: flex;
 }
 
-section#featured-products > div.container > div.product > div.available-colors:first-child {
+section#featured-products > div.container > div.product > div.available-colors > div:first-child {
   color: var(--primary-color);
 }
 
-section#featured-products > div.container > div.product > div.available-colors i:nth-child(2) {
+section#featured-products > div.container > div.product > div.available-colors > div:nth-child(2) {
+  color: var(--success-color);
+}
+
+section#featured-products > div.container > div.product > div.available-colors > div:nth-child(3) {
   color: var(--alert-color);
 }
 
 
+#featured-products > div.container > div.product > div.price > small.entire-value {
+  color: var(--muted-color);
+  font-weight: bold;
+}
+
+#featured-products > div.container > div.product > div.price > small.discount-value {
+  color: var(--success-color);
+  font-weight: bold;
+}
