@@ -213,6 +213,7 @@ section#editors-pick {
   flex-direction: column;
   align-items: center;
   margin-block: 4em;
+  background-color: var(--light-gray);
 }
 
 section#editors-pick > h2 {
