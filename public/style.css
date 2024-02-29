@@ -175,7 +175,6 @@ div.carrousel > div#carrousel-control > button#carrousel-control-next {
 div.carrousel > div#carrousel-control > ol#carrousel-item-indicator {
   list-style: none;
   gap: 0.1em;
-  grid: 2 2;
   display: flex;
   justify-content: center;
 }
@@ -191,3 +190,49 @@ div.carrousel > div#carrousel-control > ol#carrousel-item-indicator > li.carrous
 div.carrousel > div#carrousel-control > ol#carrousel-item-indicator > li.carrousel-indicator:hover {
   opacity: 1;
 }
+
+section#editors-pick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+section#editors-pick > div.container {
+  display: grid;
+  width: 1050px;
+  height: 500px;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+section#editors-pick > div.container > div.item-xl {
+  grid-row: 1 / 3;
+  grid-column: 1 / 3;
+}
+
+section#editors-pick > div.container > div.item-lg {
+  grid-row: 1 / 3;
+  grid-column: 3 / 4;
+}
+
+section#editors-pick > div.container > div.product {
+  position: relative;
+}
+
+section#editors-pick > div.container > div.product > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section#editors-pick > div.container > div.product > h3 {
+  padding: 1em;
+  background-color: var(--light-background-color);
+  color: var(--dark-background-color);
+  position: absolute;
+  bottom: 0;
+  margin: 2em;
+  padding-inline: 3em;
+}
+
+
