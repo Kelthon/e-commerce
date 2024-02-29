@@ -26,12 +26,18 @@ body {
   height: 100%;
 }
 
+nav.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
 nav.navbar > aside > section {
   display: flex;
   justify-content: space-between;
   background-color: var(--dark-background-color);
   padding-block: 1em;
   color: var(--light-background-color);
+  padding-inline: 1em;
 }
 
 nav.navbar > aside > section > h2 {
@@ -67,6 +73,7 @@ nav.navbar > section {
   padding-block: 1em;
   align-items: center;
   justify-content: space-between;
+  padding-inline: 1em;
 }
 
 nav.navbar > section > header {
@@ -86,6 +93,10 @@ nav.navbar > section > footer > ul {
 nav.navbar > section > footer > ul > li > a {
   text-decoration: none;
   color: var(--primary-color);
+}
+
+nav.navbar > section > footer > ul > li > a > i {
+  padding-inline-end: 0.25em;
 }
 
 div.carrousel {
@@ -140,8 +151,9 @@ div.carrousel > div#carrousel-items > div.carrousel-item > div.carrousel-caption
 
 div.carrousel > div#carrousel-items > div.carrousel-item > div.carrousel-caption > div.carrousel-container > section > button {
   background-color: var(--success-color);
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: bold;
+  font-size: 1.5em;
 }
 
 div.carrousel > div#carrousel-items > div.carrousel-item > div.carrousel-caption > div.carrousel-container > section > button:hover {
@@ -187,6 +199,11 @@ div.carrousel > div#carrousel-control > ol#carrousel-item-indicator > li.carrous
   opacity: 0.5;
 }
 
+div.carrousel > div#carrousel-control > ol#carrousel-item-indicator > li.carrousel-indicator-active {
+  background-color: var(--light-background-color);
+  opacity: 1;
+}
+
 div.carrousel > div#carrousel-control > ol#carrousel-item-indicator > li.carrousel-indicator:hover {
   opacity: 1;
 }
@@ -195,8 +212,17 @@ section#editors-pick {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-block: 4em;
 }
- 
+
+section#editors-pick > h2 {
+  margin-block-end: 1em;
+}
+
+section#editors-pick > p {
+  margin-block-end: 2em;
+}
+
 section#editors-pick > div.container {
   display: grid;
   width: 1050px;
@@ -231,8 +257,10 @@ section#editors-pick > div.container > div.product > h3 {
   color: var(--dark-background-color);
   position: absolute;
   bottom: 0;
-  margin: 2em;
-  padding-inline: 3em;
+  left: 0;
+  margin-bottom: 2em;
+  margin-inline-start: 1em;
+  padding-inline: 2em;
 }
 
 
