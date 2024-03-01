@@ -305,7 +305,6 @@ section#featured-products > div.container > div.product {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1 0 20%;
   gap: 1em;
 }
 
@@ -313,7 +312,6 @@ section#featured-products > div.container > div.product > div.price {
   display: flex;
   gap: 10px
 }
-
 
 section#featured-products > div.container > div.product > div.available-colors {
   display: flex;
@@ -340,4 +338,94 @@ section#featured-products > div.container > div.product > div.available-colors >
 #featured-products > div.container > div.product > div.price > small.discount-value {
   color: var(--success-color);
   font-weight: bold;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer > section {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1em;
+  padding-block: 3em;
+  background-color: var(--light-gray);
+  padding-inline: 8em;
+}
+
+footer > section > p {
+  display: flex;
+  gap: 1em;
+}
+
+footer > section > p > a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+footer > hr {
+  color: var(--muted-color);
+}
+
+footer > div.container {
+  display: flex;
+  padding-inline: 8em;
+  padding-block: 3em;
+  gap: 5em;
+  justify-content: space-between;
+}
+
+footer > div.container > section {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+footer > div.container > section > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+footer > div.container > section > ul > li {
+  font-weight: bold;
+  color: var(--secondary-text-color);
+}
+
+footer > div.container > section > p {
+  display: flex;
+  flex-direction: row;
+}
+
+footer > div.container > section > p > input {
+  border: 1px var(--muted-color) solid;
+  border-radius: 0.2em;
+  background-color: var(--light-gray);
+  padding: 1em;
+}
+
+footer > div.container > section > p > input::placeholder {
+  font-weight: 600;
+}
+
+footer > div.container > section > p > button {
+  border-radius: 0.2em;
+  background-color: var(--primary-color);
+  padding: 1em;
+  border: none;
+  color: var(--light-background-color);
+}
+
+footer > div.container > section > small {
+  color: var(--secondary-text-color);
+}
+
+
+footer > p {
+  padding-inline: 8em;
+  padding-block: 2em;
+  background-color: var(--light-gray);
+  font-weight: bold;
+  color: var(--secondary-text-color);
 }
