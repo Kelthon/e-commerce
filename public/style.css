@@ -340,6 +340,69 @@ section#featured-products > div.container > div.product > div.available-colors >
   font-weight: bold;
 }
 
+div.banner {
+  display: flex;
+  padding-inline: 8em;
+}
+
+div.banner > img {
+  flex: 1;
+  width: 50%;
+  object-fit: cover;
+}
+
+div.banner > section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+div.banner > section > small {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--muted-color);
+  font-size: 1.5em;
+}
+
+div.banner > section > h2 {
+  font-weight: bold;
+  color: var(--dark-background-color);
+  font-size: 4em;
+}
+
+div.banner > section > p {
+  color: var(--secondary-text-color);
+  font-size: 2.2em;
+}
+div.banner > section > p:last-child {
+  display: flex;
+  gap: 1em;
+}
+
+div.banner > section > p:last-child > button {
+  padding: 1em;
+  border: 3px solid var(--success-color);
+  color: var(--success-color);
+  font-weight: bold;
+}
+
+
+div.banner > section > p:last-child > button:first-child {
+  background-color: var(--success-color);
+  color: var(--light-background-color);
+}
+
+div.banner > section > p:last-child > button:hover {
+  background-color: var(--success-color);
+  color: var(--light-background-color);
+  opacity: 0.8;
+}
+
+div.banner > section > p:last-child > button:first-child:hover {
+  opacity: 0.8;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -420,7 +483,6 @@ footer > div.container > section > p > button {
 footer > div.container > section > small {
   color: var(--secondary-text-color);
 }
-
 
 footer > p {
   padding-inline: 8em;
